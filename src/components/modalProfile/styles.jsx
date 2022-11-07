@@ -49,6 +49,16 @@ export const Content = styled.div`
     #git:hover {
         color: #34343e;
     }
+    @media (max-width: 1000px) {
+        h3 {
+        position: absolute;
+        z-index: 20;
+        top: 34%;
+        font-size: 20px;
+        right: 10%;
+        cursor: pointer;
+    }
+    }
 `;
 
 export const Pelicula = styled.div`

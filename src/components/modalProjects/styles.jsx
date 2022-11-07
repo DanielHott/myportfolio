@@ -9,6 +9,12 @@ export const Container = styled.div`
     align-items: center;
     position: fixed;
     top: 0;
+    @media (max-width: 1000px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+ }
 `
 export const Content = styled.div`
     width: 800px;
@@ -31,14 +37,14 @@ export const Content = styled.div`
         text-align: start;
         word-break: break-word;
     }
-
+    
     th, td {
         border: 1px solid #3E4C5E;
         padding: 10px;
         max-width: 32rem;
         text-align: center;
         :hover {
-
+            
         }
     }
     a {
@@ -52,7 +58,34 @@ export const Content = styled.div`
         right: 30%;
         cursor: pointer;
     }
-`;
+    @media (max-width: 1000px) {
+      display: flex;
+      width: 100%;
+      height: 80%;
+      flex-direction: column;
+      align-items: center;
+      overflow-y: auto;
+      th, td {
+          border: 1px solid #3E4C5E;
+          padding: 10px;
+          width: 100%;
+          :hover {
+    
+          }
+      }
+      a {
+          color: black;
+          font-size: 18px;
+      }
+      h3 {
+          position: absolute;
+          z-index: 20;
+          top: 8%;
+          right: 8%;
+          cursor: pointer;
+      }
+    }
+    `;
 
 export const Pelicula = styled.div`
     width: 100vw;

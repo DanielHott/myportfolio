@@ -9,6 +9,7 @@ export const Container = styled.div`
     align-items: center;
     position: fixed;
     top: 0;
+
 `
 export const Content = styled.div`
     width: 600px;
@@ -34,6 +35,24 @@ export const Content = styled.div`
         top: 20%;
         right: 30%;
         cursor: pointer;
+    }
+    @media (max-width: 1000px) {
+        display: flex;
+        width: 80%;
+        height: 80%;
+        h3 {
+        position: absolute;
+        z-index: 20;
+        top: 8%;
+        right: 10%;
+        cursor: pointer;
+    }
+    p {
+        overflow: scroll;
+        width: 100%;
+        text-align: start;
+
+    }
     }
 `;
 
