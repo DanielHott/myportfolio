@@ -35,6 +35,12 @@ export function Projects () {
                     <td><a target="_blank" rel="noreferrer" href="https://danielhott.github.io/food-app/#/"><GrDeploy /></a></td>
                     <td><a target="_blank" rel="noreferrer" href="https://github.com/DanielHott/food-app"><AiFillGithub/></a></td>
             </tr>
+            <tr>
+                    <td>Pokemons</td>
+                    <td>Encontre seu pokemon favorito e suas evoluções!.</td>
+                    <td><a target="_blank" rel="noreferrer" href="https://pokemons-rust.vercel.app/"><GrDeploy /></a></td>
+                    <td><a target="_blank" rel="noreferrer" href="https://github.com/DanielHott/Pokemons"><AiFillGithub/></a></td>
+            </tr>
             </table>
                 <h3>X</h3>
             </Content>
