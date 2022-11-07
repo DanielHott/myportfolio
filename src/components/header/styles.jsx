@@ -8,9 +8,9 @@ export const Container = styled.div`
   align-items: center;
   color: white;
   justify-content: space-around;
-  background: #3e4c5e;
+  background: #F2E9E1;
   :hover {
     transition-property: background-color;
-    background: #3e4c5e;
+    background: #F2E9E1;
   }
 `;

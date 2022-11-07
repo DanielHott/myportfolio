@@ -5,18 +5,19 @@ export const Container = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
-  background: #222A35;
+  background: #F2E9E1;
   align-items: center;
   justify-content: space-around;
+  padding-bottom: 50px;
 `;
 
 export const Cards = styled.div`
   border-radius: 5px;
-  box-shadow: 2px 7px 100px 2px rgba(50, 50, 50, 0.22);
+  box-shadow: 2px 7px 100px 2px #DB9A8F;
   padding: 30px;
   background-color: white;
   text-align: center;
-  color: black;
+  color: #DB9A8F;
   margin: 20px;
   width: 320px;
   transition: all 0.3s ease-out;
@@ -25,7 +26,7 @@ export const Cards = styled.div`
   transform: translateY(-5px);
   cursor: pointer;
   filter: grayscale(0%);
-  box-shadow: 2px 7px 20px 7px gray;
+  box-shadow: 2px 7px 20px 7px #DB9A8F;
 /*   background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% ); */
   
   }

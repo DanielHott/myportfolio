@@ -3,8 +3,7 @@ import { Container } from "./styles"
 export function Header () {
     return (
         <Container>
-            <h1> Daniel Hott </h1>
-            <p>Desenvolvedor Front-End</p>
+            <img src="./hott.png" width={"199"} height={"189"} alt="minha logo"/>
         </Container>
     )
 }
