@@ -12,7 +12,7 @@ export const Container = styled.div`
 }
 
 .progressbar-text {
-  
+  margin-top: -30px;
   font-weight: bold;
   font-size: 30px;
   letter-spacing: 1rem,
