@@ -2,27 +2,58 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
-    flex-direction: column;
     align-items: space-around;
     justify-content: center;
-    .circle-box div {
+    #content {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+    }
+    #about-area {
+      width: 100%;
 }
 
-#circleA, #circleB, #circleC, #circleD  {
+#titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.progressbar-text {
-  margin-top: -30px;
-  font-weight: bold;
-  font-size: 30px;
-  letter-spacing: 1rem,
-}
-
-#data-area p {
-  color: #d87a69;
+.main-title {
+  color: #444;
+  margin: 0 0 65px 0;
+  font-size: 40px;
   text-align: center;
-  font-size: 23px;
-
 }
 
+.main-title::after {
+  content: "";
+  border-top: 2px solid #333;
+  width: 15%;
+  position: absolute;
+  top: 60px;
+  left: 42.5%;
+}
+
+.about-title {
+  font-size: 17px;
+  color: #444;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#about-list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 11em;
+}
+
+#about-list li {
+  line-height: 30px;
+}
+
+#about-list i {
+  color: #d87a69;
+  margin-right: 15px;
+}
 `;
