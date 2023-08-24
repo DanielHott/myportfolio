@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
-
+    flex-direction: column;
+    align-items: space-around;
+    justify-content: center;
     .circle-box div {
-  padding: 0 50px;
 }
 
 #circleA, #circleB, #circleC, #circleD  {
-  height: 345px;
 }
 
 .progressbar-text {

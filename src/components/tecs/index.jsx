@@ -11,56 +11,69 @@ export function Tecs () {
       const containerC = document.getElementById('circleC');
       const containerD = document.getElementById('circleD');
   
-      const circleA = new ProgressBar.Circle(containerA, {
-        color: '#d87a69',
-        strokeWidth: 8,
-        duration: 1600,
-        from: { color: '#aaa' },
-        to: { color: '#d87a69' },
-        step: function (state, circle) {
-            circle.path.setAttribute('stroke', state.color);
-            var value = String(Math.round(circle.value() * 100));
-            circle.setText(Number(value) < 100 ? value.replace(/0/, '') : value + '%');
-        },
+      const bar = new ProgressBar.Line(containerA, {
+        strokeWidth: 15,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#ffffff',
+        trailColor: '#ffffff',
+        trailWidth: 2,
+        svgStyle: {width: '100%', height: '100%'},
+        from: {color: '#ffffff'},
+        to: {color: '#000000'},
+        step: (state, bar) => {
+          bar.path.setAttribute('stroke', state.color);
+          var value = String(Math.round(bar.value() * 100));
+          bar.setText(Number(value) < 100 ? value.replace(/0/, '') : value + '%');        }
+      });
+        
+      const barB = new ProgressBar.Line(containerB, {
+        strokeWidth: 15,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#ffffff',
+        trailColor: '#ffffff',
+        trailWidth: 2,
+        svgStyle: {width: '100%', height: '100%'},
+        from: {color: '#ffffff'},
+        to: {color: '#000000'},
+        step: (state, bar) => {
+          bar.path.setAttribute('stroke', state.color);
+          var value = String(Math.round(bar.value() * 100));
+          bar.setText(Number(value) < 100 ? value.replace(/0/, '') : value + '%');        }
       });
   
-      const circleB = new ProgressBar.Circle(containerB, {
-        color: '#d87a69',
-        strokeWidth: 8,
-        duration: 1600,
-        from: { color: '#aaa' },
-        to: { color: '#d87a69' },
-        step: function (state, circle) {
-            circle.path.setAttribute('stroke', state.color);
-            var value = String(Math.round(circle.value() * 100));
-            circle.setText(Number(value) < 100 ? value.replace(/0/, '') : value + '%');
-        },
+      const barC = new ProgressBar.Line(containerC, {
+        strokeWidth: 15,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#ffffff',
+        trailColor: '#ffffff',
+        trailWidth: 2,
+        svgStyle: {width: '100%', height: '100%'},
+        from: {color: '#ffffff'},
+        to: {color: '#000000'},
+        step: (state, bar) => {
+          bar.path.setAttribute('stroke', state.color);
+          var value = String(Math.round(bar.value() * 100));
+          bar.setText(Number(value) < 100 ? value.replace(/0/, '') : value + '%');        }
       });
   
-      const circleC = new ProgressBar.Circle(containerC, {
-        color: '#d87a69',
-        strokeWidth: 8,
-        duration: 1600,
-        from: { color: '#aaa' },
-        to: { color: '#d87a69' },
-        step: function (state, circle) {
-            circle.path.setAttribute('stroke', state.color);
-            var value = String(Math.round(circle.value() * 100));
-            circle.setText(Number(value) < 100 ? value.replace(/0/, '') : value + '%');
-        },
-      });
-  
-      const circleD = new ProgressBar.Circle(containerD, {
-        color: '#d87a69',
-        strokeWidth: 8,
-        duration: 1600,
-        from: { color: '#aaa' },
-        to: { color: '#d87a69' },
-        step: function (state, circle) {
-          circle.path.setAttribute('stroke', state.color);
-          var value = String(Math.round(circle.value() * 100));
-          circle.setText(Number(value) < 100 ? value.replace(/0/, '') : value + '%');
-        },
+      const barD = new ProgressBar.Line(containerD, {
+        strokeWidth: 15,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#ffffff',
+        trailColor: '#ffffff',
+        borderRadius: '10px',
+        trailWidth: 2,
+        svgStyle: {width: '100%', height: '100%'},
+        from: {color: '#ffffff'},
+        to: {color: '#000000'},
+        step: (state, bar) => {
+          bar.path.setAttribute('stroke', state.color);
+          var value = String(Math.round(bar.value() * 100));
+          bar.setText(Number(value) < 100 ? value.replace(/0/, '') : value + '%');        }
       });
   
       const dataAreaOffset = document.getElementById('data-area').offsetTop;
@@ -68,10 +81,10 @@ export function Tecs () {
       const handleScroll = () => {
         const scroll = window.scrollY;
         if (scroll > dataAreaOffset - 500 && !animationStarted) {
-          circleA.animate(1.0);
-          circleB.animate(1.0);
-          circleC.animate(1.0);
-          circleD.animate(1.0);
+          bar.animate(1.0); 
+          barB.animate(1.0);
+          barC.animate(1.0);
+          barD.animate(1.0);
           setAnimationStarted(true);
         }
       };
@@ -88,7 +101,9 @@ export function Tecs () {
         <div class="container">
           <div class="row">
             <div class="col-md-3 col-xs-6 circle-box">
-              <div id="circleA"></div>
+              <div id="circleA">
+
+              </div>
               <p>React.js</p>
             </div>
             <div class="col-md-3 col-xs-6 circle-box">
