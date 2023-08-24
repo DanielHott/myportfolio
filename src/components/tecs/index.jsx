@@ -15,7 +15,6 @@ export function Tecs () {
         color: '#d87a69',
         strokeWidth: 8,
         duration: 1600,
-        letterSpacing: '20px',
         from: { color: '#aaa' },
         to: { color: '#d87a69' },
         step: function (state, circle) {
