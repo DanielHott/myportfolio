@@ -2,19 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
-    flex-direction: column;
-    align-items: space-around;
-    justify-content: center;
-    margin-top: -100px;
+
     .circle-box div {
   padding: 0 50px;
 }
 
 #circleA, #circleB, #circleC, #circleD  {
   height: 345px;
-  p {
-    margin-top: -400px;
-  }
 }
 
 .progressbar-text {
@@ -27,7 +21,6 @@ export const Container = styled.div`
   color: #d87a69;
   text-align: center;
   font-size: 23px;
-  margin-top: -100px;
 
 }
 
