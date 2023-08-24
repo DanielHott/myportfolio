@@ -6,6 +6,8 @@ import { FaGithub } from 'react-icons/fa';
 
 export function Header () {
     const { isEnglish, setisEnglish} = useAddContext();
+    console.log('Me contrata, sou um ótimo dev, prometo!!')
+
     return (
         <Container>
             <img src="./hott.png" width={"99"} height={"89"} alt="minha logo"/>

@@ -4,10 +4,12 @@ export const Container = styled.div`
     display: flex;
     align-items: space-around;
     justify-content: center;
+    color: #444;
     #content {
       display: flex;
       flex-direction: column;
       align-items: left;
+      margin-top: 60px;
     }
     #about-area {
       width: 100%;
@@ -36,7 +38,7 @@ export const Container = styled.div`
 }
 
 .about-title {
-  font-size: 17px;
+  font-size: 24px;
   color: #444;
   text-transform: uppercase;
   font-weight: bold;
@@ -50,6 +52,7 @@ export const Container = styled.div`
 
 #about-list li {
   line-height: 30px;
+  color: #444;
 }
 
 #about-list i {

@@ -21,7 +21,7 @@ export function MyCards() {
           width="233"
           height="480"
           frameBorder="0"
-          class="giphy-embed"
+          className="giphy-embed"
           allowFullScreen
         ></iframe>
         Meus Projetos
@@ -50,7 +50,7 @@ export function MyCards() {
           width="300"
           height="480"
           frameBorder="0"
-          class="giphy-embed"
+          className="giphy-embed"
           allowFullScreen
         ></iframe>
         Minha Trajetória{" "}
