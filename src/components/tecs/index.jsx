@@ -10,9 +10,9 @@ export function Tecs () {
               <hr></hr>
               <div  id="content">
                 <div id="titles">
-                <h2 className="about-title">Stacks de Domínio:</h2>
+                <h2 className="about-title">Stacks de Domínio</h2>
                 <p>Já trabalhei com diversas tecnologias, e estou aberto a aprender quantas precisar.</p>
-                <p>Meus diferenciais:</p>
+                <p>Meus diferenciais</p>
                 </div>
                 <div></div>
                 <ul id="about-list">

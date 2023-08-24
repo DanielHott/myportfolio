@@ -10,7 +10,7 @@ export function Speciality() {
         <div className="container">
           <div className="row">
             <hr></hr>
-            <div className="col-12">
+            <div className="col-12 stacks">
               <h2 className="main-title">Minhas especialidades</h2>
             </div>
             <div className="col-md-4 service-box">

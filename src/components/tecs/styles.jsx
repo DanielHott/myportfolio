@@ -42,6 +42,7 @@ export const Container = styled.div`
   color: #444;
   text-transform: uppercase;
   font-weight: bold;
+  margin-bottom: 30px;
 }
 
 #about-list {
