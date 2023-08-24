@@ -12,7 +12,7 @@ export function Tecs () {
       const containerD = document.getElementById('circleD');
   
       const bar = new ProgressBar.Line(containerA, {
-        strokeWidth: 15,
+        strokeWidth: 20,
         easing: 'easeInOut',
         duration: 1400,
         color: '#ffffff',
@@ -28,7 +28,7 @@ export function Tecs () {
       });
         
       const barB = new ProgressBar.Line(containerB, {
-        strokeWidth: 15,
+        strokeWidth: 20,
         easing: 'easeInOut',
         duration: 1400,
         color: '#ffffff',
@@ -44,7 +44,7 @@ export function Tecs () {
       });
   
       const barC = new ProgressBar.Line(containerC, {
-        strokeWidth: 15,
+        strokeWidth: 20,
         easing: 'easeInOut',
         duration: 1400,
         color: '#ffffff',
@@ -60,7 +60,7 @@ export function Tecs () {
       });
   
       const barD = new ProgressBar.Line(containerD, {
-        strokeWidth: 15,
+        strokeWidth: 20,
         easing: 'easeInOut',
         duration: 1400,
         color: '#ffffff',
