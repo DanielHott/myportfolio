@@ -5,9 +5,9 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: space-around;
     justify-content: center;
+    margin-top: -100px;
     .circle-box div {
   padding: 0 50px;
-  margin-top: -100px;
 }
 
 .progressbar-text {

@@ -12,8 +12,10 @@ import { Slide } from './components/slide';
 import { About } from './components/about';
 import { Speciality } from './components/specialists';
 import { Tecs } from './components/tecs';
+import { useAddContext } from './hooks/useAddContext';
 
 function App() {
+
   return (
     <AddContextProvider>
       <Header />
@@ -22,7 +24,7 @@ function App() {
       <Speciality />
       <Tecs />
       <MyProjects>
-      <h2>My Projects</h2>
+      <h2>{useAddContext.isEngish ? 'My Projects' : 'Meus Projetos'}</h2>
       </MyProjects>
       <Projects />
       <Footer />

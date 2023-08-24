@@ -1,6 +1,7 @@
 import { Container } from "./styles"
 import React, { useEffect, useState } from 'react';
 var ProgressBar = require('./progressbar.min.js')
+
 export function Tecs () {
     const [animationStarted, setAnimationStarted] = useState(false);
 
