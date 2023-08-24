@@ -12,6 +12,9 @@ export const Container = styled.div`
 
 #circleA, #circleB, #circleC, #circleD  {
   height: 345px;
+  p {
+    margin-top: -100px;
+  }
 }
 
 .progressbar-text {
