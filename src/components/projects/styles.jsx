@@ -42,7 +42,7 @@ font-family: 'Roboto';
   display: flex;
   width: 100%;
   height: 100%;
-  color: #0000009d;
+  color: #444;
   margin-top: -30px;
   align-items: center;
   justify-content: space-around;
