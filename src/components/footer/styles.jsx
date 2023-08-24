@@ -4,13 +4,12 @@ export const Container = styled.div`
     font-family: 'Open Sans';
     display: flex;
     width: 100%;
-    position: fixed;
     bottom: 0;
-    height: 25px;
+    height: 40px;
     color: white;
     background: #DB9A8F;
     justify-content: center;
-    align-items: top;
+    align-items: center;
     p {
         font-family: "Open Sans";
         margin-top: 2px;

@@ -3,15 +3,15 @@ import React, { createContext, useState, useContext } from "react";
 const AddContext = createContext();
 
 export function AddContextProvider({ children }) {
-  const [isModalOpen, setisModalOpen] = useState(false);
+  const [isEnglish, setisEnglish] = useState(false);
   const [isModalProjectOpen, setisModalProjectOpen] = useState(false);
   const [isModalProfileOpen, setisModalProfileOpen] = useState(false);
 
   return (
     <AddContext.Provider
       value={{
-        isModalOpen,
-        setisModalOpen,
+        isEnglish,
+        setisEnglish,
         isModalProjectOpen,
         setisModalProjectOpen,
         isModalProfileOpen,
@@ -26,16 +26,16 @@ export function AddContextProvider({ children }) {
 export function useAddContext() {
   const context = useContext(AddContext);
   const {
-    isModalOpen,
-    setisModalOpen,
+    isEnglish,
+    setisEnglish,
     isModalProfileOpen,
     setisModalProfileOpen,
     isModalProjectOpen,
     setisModalProjectOpen,
   } = context;
   return {
-    isModalOpen,
-    setisModalOpen,
+    isEnglish,
+    setisEnglish,
     isModalProfileOpen,
     setisModalProfileOpen,
     isModalProjectOpen,

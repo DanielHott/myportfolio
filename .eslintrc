@@ -1,0 +1,4 @@
+{
+    "ignorePatterns": ["src/components/tecs/progressbar.min.js"],
+    // Other ESLint configurations...
+  }
